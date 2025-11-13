@@ -1,12 +1,8 @@
 package com.example;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.testng.ITest;
-
 public class CalculatorTest {
 
-    ITest
+    @Test
     public void testAdd() {
         Calculator calc = new Calculator();
         Assertions.assertEquals(5, calc.add(2, 3));
@@ -17,4 +13,10 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         Assertions.assertEquals(1, calc.subtract(3, 2));
     }
+    @Test
+public void testMultiply() {
+    Calculator calc = new Calculator();
+    Assertions.assertEquals(6, calc.multiply(2, 3));
+}
+
 }
